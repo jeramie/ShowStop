@@ -45,16 +45,22 @@ class __TwigTemplate_3e0bae2ddce1c6d5bf5f68c485e7be94 extends Twig_Template
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/showstop/img/logo.gif"), "html");
         echo "\" alt=\"showstop\" />
 \t\t\t</div>
+\t\t\t<div id=\"search\">
+\t\t\t\t<form method=\"post\" action=\"/\">
+\t\t\t\t\t<input type=\"text\" name=\"search-box\" id=\"search-box\" />
+\t\t\t\t\t<input type=\"submit\" id=\"submit\" value=\"\" />
+\t\t\t\t</form>
+\t\t\t</div>
 \t\t\t";
-        // line 17
+        // line 23
         $this->displayBlock('body', $context, $blocks);
-        // line 18
+        // line 24
         echo "\t\t</div>
         
         ";
-        // line 20
+        // line 26
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 21
+        // line 27
         echo "    </body>
 </html>
 ";
@@ -76,13 +82,13 @@ class __TwigTemplate_3e0bae2ddce1c6d5bf5f68c485e7be94 extends Twig_Template
 \t\t";
     }
 
-    // line 17
+    // line 23
     public function block_body($context, array $blocks = array())
     {
         echo "Welcome!";
     }
 
-    // line 20
+    // line 26
     public function block_javascripts($context, array $blocks = array())
     {
     }

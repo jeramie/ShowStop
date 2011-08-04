@@ -16,3 +16,36 @@ background: url('../img/nav_bg.gif') repeat-x;
 	height: 35px;
 }
 
+#search {
+	margin-top: 10px;
+}
+
+#search input {
+	border: 2px solid Gray;
+	
+}
+
+#search input#submit {
+	font-size: 18px;
+	border-radius: 0 5px 5px 0;
+	width: 50px;
+	height: 34px;
+	background: Gray;
+	position: relative;
+	top: -4px;
+	left: -50px;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	text-shadow: black 1px 1px 1px;
+	border-left: none;
+	background: url( '../img/mag_glass.gif' ) no-repeat Gray 10px -2px;
+}
+
+#search input#search-box {
+	width: 380px;
+	height: 30px;
+	font-size: 18px;
+	border-right: none;
+	border-radius:  5px 0 0 5px;
+}
