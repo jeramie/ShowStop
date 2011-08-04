@@ -37,13 +37,24 @@ class __TwigTemplate_3e0bae2ddce1c6d5bf5f68c485e7be94 extends Twig_Template
         echo "\" />
     </head>
     <body>
-        ";
-        // line 12
+\t
+\t\t<div id=\"wrapper\">
+\t\t\t<div id=\"top-nav\">
+\t\t\t\t\t<img src=\"";
+        // line 15
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/showstop/img/logo.gif"), "html");
+        echo "\" alt=\"showstop\" />
+\t\t\t</div>
+\t\t\t";
+        // line 17
         $this->displayBlock('body', $context, $blocks);
-        // line 13
-        echo "        ";
+        // line 18
+        echo "\t\t</div>
+        
+        ";
+        // line 20
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 14
+        // line 21
         echo "    </body>
 </html>
 ";
@@ -65,13 +76,13 @@ class __TwigTemplate_3e0bae2ddce1c6d5bf5f68c485e7be94 extends Twig_Template
 \t\t";
     }
 
-    // line 12
+    // line 17
     public function block_body($context, array $blocks = array())
     {
         echo "Welcome!";
     }
 
-    // line 13
+    // line 20
     public function block_javascripts($context, array $blocks = array())
     {
     }

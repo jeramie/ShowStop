@@ -9,7 +9,14 @@
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}Welcome!{% endblock %}
+	
+		<div id="wrapper">
+			<div id="top-nav">
+					<img src="{{ asset('bundles/showstop/img/logo.gif') }}" alt="showstop" />
+			</div>
+			{% block body %}Welcome!{% endblock %}
+		</div>
+        
         {% block javascripts %}{% endblock %}
     </body>
 </html>

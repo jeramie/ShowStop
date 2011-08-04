@@ -1,1 +1,2 @@
 [2011-07-28 16:32:15] request.ERROR: Symfony\Component\HttpKernel\Exception\NotFoundHttpException: No route found for "GET /" (uncaught exception) at D:\wamp\www\showstop\vendor\symfony\src\Symfony\Bundle\FrameworkBundle\EventListener\RouterListener.php line 88 [] []
+[2011-08-04 13:01:44] request.ERROR: Symfony\Component\HttpKernel\Exception\NotFoundHttpException: No route found for "GET /ss" (uncaught exception) at D:\wamp\www\showstop\vendor\symfony\src\Symfony\Bundle\FrameworkBundle\EventListener\RouterListener.php line 88 [] []
