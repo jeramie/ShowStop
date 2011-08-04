@@ -34,7 +34,11 @@ class __TwigTemplate_d10c9274d35bb499efd7d04d477e987c extends Twig_Template
     public function block_body($context, array $blocks = array())
     {
         // line 4
-        echo "     This is a basic view, with a passed parameter of name: ";
+        echo "\t";
+        echo $this->renderParentBlock("body", $context, $blocks);
+        echo "
+     This is a basic view, with a passed parameter of name: ";
+        // line 5
         echo twig_escape_filter($this->env, $this->getContext($context, 'name'), "html");
         echo "!
  ";

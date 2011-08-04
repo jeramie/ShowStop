@@ -31,19 +31,19 @@ class __TwigTemplate_3e0bae2ddce1c6d5bf5f68c485e7be94 extends Twig_Template
         ";
         // line 6
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 7
+        // line 9
         echo "        <link rel=\"shortcut icon\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html");
         echo "\" />
     </head>
     <body>
         ";
-        // line 10
+        // line 12
         $this->displayBlock('body', $context, $blocks);
-        // line 11
+        // line 13
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 12
+        // line 14
         echo "    </body>
 </html>
 ";
@@ -52,20 +52,26 @@ class __TwigTemplate_3e0bae2ddce1c6d5bf5f68c485e7be94 extends Twig_Template
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        echo "Welcome!";
+        echo "showstop.tv | most up-to-date details for television";
     }
 
     // line 6
     public function block_stylesheets($context, array $blocks = array())
     {
+        // line 7
+        echo "\t\t<link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/showstop/css/base.css"), "html");
+        echo "\" type=\"text/css\" media=\"all\" />
+\t\t";
     }
 
-    // line 10
+    // line 12
     public function block_body($context, array $blocks = array())
     {
+        echo "Welcome!";
     }
 
-    // line 11
+    // line 13
     public function block_javascripts($context, array $blocks = array())
     {
     }
