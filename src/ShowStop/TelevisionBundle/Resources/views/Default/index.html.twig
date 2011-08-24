@@ -2,6 +2,17 @@
 
 {% block body %}
 	{{ parent() }}
-     This is a basic view, with a passed parameter of name: {{ name }}!
+	
+	<div id="search">
+				<form method="post" action="/">
+					<input type="text" name="search-box" id="search-box" />
+					<input type="submit" id="submit" value="" />
+					<div id="search-results">
+						<ul>
+						</ul>
+					</div>
+					
+				</form>
+	</div>
  {% endblock %}
 

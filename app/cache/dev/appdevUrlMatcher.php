@@ -144,13 +144,8 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         // ShowStopTelevisionBundle_homepage
-        if (preg_match('#^/(?P<name>[^/]+?)$#x', $pathinfo, $matches)) {
-            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'ShowStop\\TelevisionBundle\\Controller\\DefaultController::indexAction',)), array('_route' => 'ShowStopTelevisionBundle_homepage'));
-        }
-
-        // AcmeHelloBundle_homepage
-        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]+?)$#x', $pathinfo, $matches)) {
-            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Acme\\HelloBundle\\Controller\\DefaultController::indexAction',)), array('_route' => 'AcmeHelloBundle_homepage'));
+        if (0 === strpos($pathinfo, '/show') && preg_match('#^/show/(?P<name>[^/]+?)$#x', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'ShowStop\\TelevisionBundle\\Controller\\DefaultController::showAction',)), array('_route' => 'ShowStopTelevisionBundle_homepage'));
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

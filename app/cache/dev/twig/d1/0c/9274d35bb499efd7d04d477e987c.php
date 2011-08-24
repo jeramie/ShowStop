@@ -37,10 +37,18 @@ class __TwigTemplate_d10c9274d35bb499efd7d04d477e987c extends Twig_Template
         echo "\t";
         echo $this->renderParentBlock("body", $context, $blocks);
         echo "
-     This is a basic view, with a passed parameter of name: ";
-        // line 5
-        echo twig_escape_filter($this->env, $this->getContext($context, 'name'), "html");
-        echo "!
+\t
+\t<div id=\"search\">
+\t\t\t\t<form method=\"post\" action=\"/\">
+\t\t\t\t\t<input type=\"text\" name=\"search-box\" id=\"search-box\" />
+\t\t\t\t\t<input type=\"submit\" id=\"submit\" value=\"\" />
+\t\t\t\t\t<div id=\"search-results\">
+\t\t\t\t\t\t<ul>
+\t\t\t\t\t\t</ul>
+\t\t\t\t\t</div>
+\t\t\t\t\t
+\t\t\t\t</form>
+\t</div>
  ";
     }
 
